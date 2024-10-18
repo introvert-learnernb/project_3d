@@ -173,5 +173,5 @@ function moveCamera(){
 document.body.onscroll = moveCamera;
 
 
-const audio = new Audio('./public/hbd_track.mp3');
+const audio = new Audio('./hbd_track.mp3');
 audio.play();

@@ -1,5 +1,6 @@
 import './style.css'
 
+
 import * as THREE from 'three';
 
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
@@ -170,3 +171,7 @@ function moveCamera(){
 }
 
 document.body.onscroll = moveCamera;
+
+
+const audio = new Audio('./public/hbd_track.mp3');
+audio.play();

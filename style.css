@@ -1,0 +1,103 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+:root {
+  /* --dark-bg: rgba(15, 15, 15, 0.95); */
+  --spacing: 350px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1,
+h2,
+h3,
+div {
+  font-family: "Oleo Script", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+header {
+  background: var(--dark-bg);
+  grid-column: 2 / span 5; /*start at 2nd column and span across 5 columns... */
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+}
+
+section {
+  grid-column: 2 / 8; /* start at 2nd column and span upto column 8.. */
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+}
+
+div {
+  background-color: white;
+  text-align: justify;
+  padding: 20px;
+  border-radius: 0.75rem;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+}
+
+div p {
+  color: black;
+  font-size: 2rem;
+  display: inline;
+  line-height: 1.2;
+}
+
+.left {
+  grid-column: 6 / 12;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  header {
+    grid-column: 1 / -1; /* Span all columns */
+    font-size: 2rem; /* Adjust font size */
+  }
+
+  div p {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  main {
+    padding: 60px 0; /* Adjust padding */
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 1.5rem; /* Further reduce font size */
+  }
+
+  div p {
+    font-size: 1.05rem; /* Further adjust font size */
+  }
+}

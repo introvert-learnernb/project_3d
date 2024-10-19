@@ -52,7 +52,7 @@ header {
   align-items: center;
   gap: 8px;
   padding: 12px 24px;
-  background-color: #14ecfb; /* Green background */
+  background-color: #1e1e1e; /* Green background */
   border: none;
   border-radius: 30px; /* Rounded corners */
   color: #ffffff; /* Text color */
@@ -66,12 +66,12 @@ header {
 }
 
 .smiley-button:hover {
-  background-color: #0be0f0; /* Darker green on hover */
+  /* Darker green on hover */
   transform: translateY(-3px); /* Lift up on hover */
 }
 
 .smiley-button:active {
-  background-color: #0375e6; /* Even darker green on click */
+ /* Even darker green on click */
   transform: translateY(0); /* Reset the lift on click */
 }
 

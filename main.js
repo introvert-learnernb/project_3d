@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Scroll down functionality
     window.scrollTo({
-      top: 75, // Adjust this value for the desired scroll position
+      top:window.innerHeight/2, // Adjust this value for the desired scroll position
       behavior: 'smooth' // Smooth scrolling effect
     });
   });

@@ -30,6 +30,10 @@ document.addEventListener('DOMContentLoaded', function() {
       top: window.innerHeight, // Adjust this value for the desired scroll position
       behavior: 'smooth' // Smooth scrolling effect
     });
+    const audio = new Audio('/hbd_track.mp3');
+    audio.play().catch((error) => {
+      console.log('Autoplay was prevented:', error);
+    });
   });
 });
 
@@ -183,10 +187,4 @@ function moveCamera(){
 document.body.onscroll = moveCamera;
 
 
-window.onload = () => {
-  const audio = new Audio('/hbd_track.mp3');
-  audio.play().catch((error) => {
-    console.log('Autoplay was prevented:', error);
-  });
-};
 

@@ -182,7 +182,7 @@ window.onload = () => {
 
 function scrollDown() {
   window.scrollTo({
-    top: window.innerHeight, // Adjust this value as needed for the scroll position
+    top: 20, // Adjust this value as needed for the scroll position
     behavior: 'smooth' // Smooth scrolling
   });
 }

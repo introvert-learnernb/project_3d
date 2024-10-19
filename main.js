@@ -188,9 +188,3 @@ function moveCamera(){
 }
 
 document.body.onscroll = moveCamera;
-
-
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  console.log(request.message); // "Hello from background"
-  sendResponse({ message: "Hello from content script" });
-});

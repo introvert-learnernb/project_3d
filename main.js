@@ -1,6 +1,5 @@
 import './style.css'
 
-
 import * as THREE from 'three';
 
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
@@ -23,12 +22,16 @@ function launchConfettifirst() {
 
 setInterval(launchConfettifirst, 1000);
 
-function scrollDown() {
-  window.scrollTo({
-    top: 20, // Adjust this value as needed for the scroll position
-    behavior: 'smooth' // Smooth scrolling
+document.addEventListener('DOMContentLoaded', function() {
+  const button = document.querySelector('.smiley-button');
+
+  button.addEventListener('click', function() {
+    window.scrollTo({
+      top: window.innerHeight, // Adjust this value for the desired scroll position
+      behavior: 'smooth' // Smooth scrolling effect
+    });
   });
-}
+});
 
 const scene = new THREE.Scene(); //acts as a container for everything that will be  rendered..
 

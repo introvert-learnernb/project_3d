@@ -23,6 +23,13 @@ function launchConfettifirst() {
 
 setInterval(launchConfettifirst, 1000);
 
+function scrollDown() {
+  window.scrollTo({
+    top: 20, // Adjust this value as needed for the scroll position
+    behavior: 'smooth' // Smooth scrolling
+  });
+}
+
 const scene = new THREE.Scene(); //acts as a container for everything that will be  rendered..
 
 const camera =  new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
@@ -180,9 +187,3 @@ window.onload = () => {
   });
 };
 
-function scrollDown() {
-  window.scrollTo({
-    top: 20, // Adjust this value as needed for the scroll position
-    behavior: 'smooth' // Smooth scrolling
-  });
-}

@@ -24,18 +24,21 @@ setInterval(launchConfettifirst, 1000);
 
 document.addEventListener('DOMContentLoaded', function() {
   const button = document.querySelector('.smiley-button');
+  const audio = new Audio('./hbd_track.mp3'); // Load your audio file
+  audio.loop = true; // Enable looping
 
   button.addEventListener('click', function() {
+    // Play the audio when the button is clicked
+    audio.play();
+    
+    // Scroll down functionality
     window.scrollTo({
-      top: 50, // Adjust this value for the desired scroll position
+      top: 75, // Adjust this value for the desired scroll position
       behavior: 'smooth' // Smooth scrolling effect
-    });
-    const audio = new Audio('/hbd_track.mp3');
-    audio.play().catch((error) => {
-      console.log('Autoplay was prevented:', error);
     });
   });
 });
+
 
 const scene = new THREE.Scene(); //acts as a container for everything that will be  rendered..
 

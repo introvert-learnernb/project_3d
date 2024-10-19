@@ -173,5 +173,9 @@ function moveCamera(){
 document.body.onscroll = moveCamera;
 
 
-const audio = new Audio('./hbd_track.mp3');
-audio.play();
+window.onload = () => {
+  const audio = new Audio('./hbd_track.mp3');
+  audio.play().catch((error) => {
+    console.log('Autoplay was prevented:', error);
+  });
+};

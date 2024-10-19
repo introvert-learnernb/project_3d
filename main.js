@@ -179,3 +179,10 @@ window.onload = () => {
     console.log('Autoplay was prevented:', error);
   });
 };
+
+function scrollDown() {
+  window.scrollTo({
+    top: window.innerHeight, // Adjust this value as needed for the scroll position
+    behavior: 'smooth' // Smooth scrolling
+  });
+}

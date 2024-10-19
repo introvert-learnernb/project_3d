@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   button.addEventListener('click', function() {
     window.scrollTo({
-      top: window.innerHeight, // Adjust this value for the desired scroll position
+      top: 50, // Adjust this value for the desired scroll position
       behavior: 'smooth' // Smooth scrolling effect
     });
     const audio = new Audio('/hbd_track.mp3');
